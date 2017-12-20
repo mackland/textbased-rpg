@@ -4,10 +4,14 @@ public class Creature {
     private int maxHealth;
     private int currentHealth;
     private int damage;
-    private int potions;
+    private int potions; 
+    public int currentX;
+    public int currentY;
+
+    public Creature(){
     
-    private int currentX;
-    private int currentY;
+    }
+
     public Creature(int mH, int cH, int dmg, int potions) {
         this.maxHealth = mH;
         this.currentHealth = cH;

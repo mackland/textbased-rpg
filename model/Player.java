@@ -1,3 +1,5 @@
+package model;
+
 public class Player extends Creature {
     private String name;
 
@@ -9,5 +11,7 @@ public class Player extends Creature {
     public void move(int dx, int dy){
         this.currentX = this.currentX + dx;
         this.currentY = this.currentY + dy;
+
+        System.out.println("Player has moved to: [" + this.currentX + "," + this.currentY + "]");
     }
 }
