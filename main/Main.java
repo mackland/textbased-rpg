@@ -6,12 +6,14 @@ import view.*;
 public class Main{
     public static void main(String[] args){
         World game = new World();
-        Display disp = new Display();
+        Display display = new Display();
         Player player1 = new Player(20, 20, 4, 0, "Marcus");
+        Creature creature = new Creature(20, 20, 4, 0, "Skeleton");
+        Battle battle;
 
         game.setUp();
         game.printBoard();
-        char mov = disp.getDirections();
+        char mov = display.getDirections();
         int dx = 0;
         int dy = 0;
         if(mov == 'n'){
@@ -28,7 +30,10 @@ public class Main{
             dy = 0;
         }
         player1.move(dx, dy);
-
+        
+        display.enemyAppeared();
+        battle = new Battle(player1, creature, display);
+        battle.start();
     }
 /*
     public char getInput(){
