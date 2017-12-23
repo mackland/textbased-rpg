@@ -18,16 +18,18 @@ public class Battle {
         fighting = true;
         while(fighting){
             display.showBattleInfo(player.getHealth(), creature.getHealth());
-            int attack = player.attack();
-            creature.updateHealth(-attack);
-            display.attackInfo(player.getName(), creature.getName(), attack);
+            
+            if(true){
+                creature.updateHealth(player.getDamage());
+                display.attackInfo(player.getName(), creature.getName(), player.getDamage());
+            } 
+            
             if(creature.getHealth() <= 0){
                 display.successfulBattle(creature.getName());
                 fighting = false;
-            } 
-            //ask user input
-            //attack
-            //if health > 0 -> continue
+            }
+            
+            //creature attack player
         }
     }
     

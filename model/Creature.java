@@ -17,10 +17,10 @@ public class Creature {
         this.name = name;
     }
 
-    public int attack() {
+    public int getDamage(){
         return damage;
     }
-    
+
     public void updateHealth(int dHP) {
         this.currentHealth = this.currentHealth + dHP;
     }
