@@ -14,16 +14,18 @@ public class Controlls{
         Battle battle;
         
         game.setUp();
-        display.printBoard(game.getBoard());
-        display.getDirections();
+        display.firstMessage();
+        display.firstDecision();
+        //printBoard(game.getBoard());
+        //display.getDirections();
         char input = getInput();
-        game.updatePosition(input);
-        display.printBoard(game.getBoard());
+        //game.updatePosition(input);
+        //display.printBoard(game.getBoard());
         //model update position
         //when enter new position on board
         //random chance to fight enemy
 
-        display.enemyAppeared();
+        //display.enemyAppeared();
         //game.startBattle();
         //battle = new Battle(player1, creature, display);
         //battle.start();
