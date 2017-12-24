@@ -2,11 +2,23 @@ package view;
 
 public class Display{
     public void getDirections() {
+        for(int i = 0; i < 100; i++) System.out.println();
         System.out.println("--- Where do you want to go? ---");
         System.out.println("1. North.....(n)");
         System.out.println("2. South.....(s)");
         System.out.println("3. West......(w)");
         System.out.println("4. East......(e)");
+    }
+    
+    public void printBoard(String[][] board){
+        for(int i = 0; i < 100; i++) System.out.println();
+        
+        for(String[] row : board){
+            for(String loc : row){
+                System.out.print(loc);
+            }
+            System.out.println();
+        }
     }
 
     public void enemyAppeared(){

@@ -14,11 +14,11 @@ public class Controlls{
         Battle battle;
         
         game.setUp();
-        game.printBoard();
+        display.printBoard(game.getBoard());
         display.getDirections();
         char input = getInput();
         game.updatePosition(input);
-        
+        display.printBoard(game.getBoard());
         //model update position
         //when enter new position on board
         //random chance to fight enemy

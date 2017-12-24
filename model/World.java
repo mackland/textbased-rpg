@@ -15,6 +15,10 @@ public class World{
         a[currY][currX] = "O";
     }
 
+    public String[][] getBoard(){
+        return a;
+    }
+/*
     public void printBoard(){
         for(String[] row : a){
             for(String loc : row){
@@ -23,7 +27,7 @@ public class World{
             System.out.println();
         }
     }
-
+*/
     public void updatePosition(char direction){
         int x=0; int y=0;
         if(direction == 'n'){
@@ -39,6 +43,7 @@ public class World{
             x = -1;
             y = 0;
         } 
+        a[currY][currX] = " ";
         currX = currX + x;
         currY = currY + y;
         a[currY][currX] = "O";
