@@ -19,6 +19,12 @@ public class Controlls{
         //printBoard(game.getBoard());
         //display.getDirections();
         char input = getInput();
+        switch(input){
+            case '1':
+                display.enterDungeon("cave");
+                Dungeon cave = new Dungeon();
+        }
+        
         //game.updatePosition(input);
         //display.printBoard(game.getBoard());
         //model update position

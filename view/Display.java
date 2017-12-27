@@ -33,7 +33,11 @@ public class Display{
         System.out.println("------- 3. Try to run away                                      -------");
         System.out.println("------- 4. Talk with them and see if you can trade some items   -------");
     }
-    
+
+    public void enterDungeon(String dungeonName){
+        System.out.println("Seeking cover you run into the dark cave, not thinking what lurks inside is even worse...");
+    }
+
     public void printBoard(String[][] board){
         for(int i = 0; i < 100; i++) System.out.println();
         
