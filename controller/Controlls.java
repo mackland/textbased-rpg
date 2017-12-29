@@ -12,7 +12,8 @@ public class Controlls{
         Player player1 = new Player(20, 20, 4, 0, "Marcus");
         Creature creature = new Creature(20, 20, 4, 0, "Skeleton");
         Battle battle;
-        
+        Dungeon dungeon;
+
         game.setUp();
         display.firstMessage();
         display.firstDecision();
@@ -22,7 +23,20 @@ public class Controlls{
         switch(input){
             case '1':
                 display.enterDungeon("cave");
-                Dungeon cave = new Dungeon();
+                dungeon = newDungeon("cave", player);
+                while(!dungeon.isCleared() && player.getHealth() > 0){
+                    display.getDirections();
+                    char input = getInput();
+                    dungeon.changeRoom(input);
+                    //get input
+                    //goto room
+                    //battle
+                    //goto room
+                }
+                //Dungeon cave = new Dungeon(player1);
+                //cave.newDungeon(player1);
+            case '2':
+              
         }
         
         //game.updatePosition(input);
