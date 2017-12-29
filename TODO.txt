@@ -1,0 +1,4 @@
+Implement a builder for dungeon class
+Finish so that player can walk around in dungeon
+Battle system for every room entered of enemies are there
+Determine what makes a dungeon cleared, kill boss or just find item?
